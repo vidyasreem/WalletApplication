@@ -20,7 +20,7 @@ import com.cg.paymentapp.beans.BenificiaryDetails;
 import com.cg.paymentapp.exception.InvalidInputException;
 import com.cg.paymentapp.repo.BenificiaryRepository;
 import com.cg.paymentapp.service.IBenificiaryService;
-import com.mysql.cj.Query;
+
 
 public class TestBenificiaryDetails {
 	private IBenificiaryService service;
@@ -54,7 +54,7 @@ public class TestBenificiaryDetails {
 	}
 
 	@Test
-	void deleteBenificiary() {
+	public void deleteBenificiary() {
 		BenificiaryDetails details = new BenificiaryDetails();
 		details.setMobileNumber("7036522");
 		details.setName("User1");

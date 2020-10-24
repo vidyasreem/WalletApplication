@@ -11,7 +11,7 @@ import com.cg.paymentapp.exception.InvalidInputException;
 
 public class BenificiaryRepository implements IBenificiaryRepository {
 
-	EntityManagerFactory emf = Persistence.createEntityManagerFactory("");
+	EntityManagerFactory emf = Persistence.createEntityManagerFactory("WalletApplication");
 	EntityManager em = emf.createEntityManager();
 
 	public BenificiaryDetails addBenificiary(BenificiaryDetails bd) {
